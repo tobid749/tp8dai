@@ -1,0 +1,30 @@
+
+2026-05-18T15:08:27.725Z : Tenant or user not found
+
+Stack Trace:
+error: Tenant or user not found
+    at parseErrorMessage (C:\Users\devandroid\Downloads\TP8DAI\TP04\node_modules\pg-protocol\dist\parser.js:305:11)
+    at Parser.handlePacket (C:\Users\devandroid\Downloads\TP8DAI\TP04\node_modules\pg-protocol\dist\parser.js:143:27)
+    at Parser.parse (C:\Users\devandroid\Downloads\TP8DAI\TP04\node_modules\pg-protocol\dist\parser.js:37:38)
+    at TLSSocket.<anonymous> (C:\Users\devandroid\Downloads\TP8DAI\TP04\node_modules\pg-protocol\dist\index.js:11:42)
+    at TLSSocket.emit (node:events:508:28)
+    at addChunk (node:internal/streams/readable:559:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+    at Readable.push (node:internal/streams/readable:390:5)
+    at TLSWrap.onStreamRead (node:internal/stream_base_commons:189:23)
+
+
+2026-05-18T15:08:37.450Z : Tenant or user not found
+
+Stack Trace:
+error: Tenant or user not found
+    at parseErrorMessage (C:\Users\devandroid\Downloads\TP8DAI\TP04\node_modules\pg-protocol\dist\parser.js:305:11)
+    at Parser.handlePacket (C:\Users\devandroid\Downloads\TP8DAI\TP04\node_modules\pg-protocol\dist\parser.js:143:27)
+    at Parser.parse (C:\Users\devandroid\Downloads\TP8DAI\TP04\node_modules\pg-protocol\dist\parser.js:37:38)
+    at TLSSocket.<anonymous> (C:\Users\devandroid\Downloads\TP8DAI\TP04\node_modules\pg-protocol\dist\index.js:11:42)
+    at TLSSocket.emit (node:events:508:28)
+    at addChunk (node:internal/streams/readable:559:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+    at Readable.push (node:internal/streams/readable:390:5)
+    at TLSWrap.onStreamRead (node:internal/stream_base_commons:189:23)
+
