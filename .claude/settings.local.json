@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node -e ' *)",
+      "Bash(nslookup -type=A db.rrqkkvjuplwcbvntaath.supabase.co)",
+      "Bash(claude mcp *)",
+      "Bash(where claude *)",
+      "Read(//c/Users/49373638/AppData/Local/Programs/**)",
+      "Read(//c/Users/49373638/AppData/Roaming/**)",
+      "Read(//c/Users/49373638/.claude//**)",
+      "Read(//c/Users/49373638/.claude/**)",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\(list\\(d.keys\\(\\)\\)\\)\")",
+      "Bash(mkdir -p /c/Users/49373638/tp8dai/.claude)"
+    ],
+    "additionalDirectories": [
+      "C:\\Users\\49373638\\tp8dai\\.claude"
+    ]
+  }
+}

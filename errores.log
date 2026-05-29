@@ -28,3 +28,125 @@ error: Tenant or user not found
     at Readable.push (node:internal/streams/readable:390:5)
     at TLSWrap.onStreamRead (node:internal/stream_base_commons:189:23)
 
+
+2026-05-29T11:11:51.807Z : Tenant or user not found
+
+Stack Trace:
+error: Tenant or user not found
+    at parseErrorMessage (C:\Users\49373638\tp8dai\node_modules\pg-protocol\dist\parser.js:305:11)
+    at Parser.handlePacket (C:\Users\49373638\tp8dai\node_modules\pg-protocol\dist\parser.js:143:27)
+    at Parser.parse (C:\Users\49373638\tp8dai\node_modules\pg-protocol\dist\parser.js:37:38)
+    at TLSSocket.<anonymous> (C:\Users\49373638\tp8dai\node_modules\pg-protocol\dist\index.js:11:42)
+    at TLSSocket.emit (node:events:508:28)
+    at addChunk (node:internal/streams/readable:559:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+    at Readable.push (node:internal/streams/readable:390:5)
+    at TLSWrap.onStreamRead (node:internal/stream_base_commons:189:23)
+
+
+2026-05-29T11:12:07.957Z : Tenant or user not found
+
+Stack Trace:
+error: Tenant or user not found
+    at parseErrorMessage (C:\Users\49373638\tp8dai\node_modules\pg-protocol\dist\parser.js:305:11)
+    at Parser.handlePacket (C:\Users\49373638\tp8dai\node_modules\pg-protocol\dist\parser.js:143:27)
+    at Parser.parse (C:\Users\49373638\tp8dai\node_modules\pg-protocol\dist\parser.js:37:38)
+    at TLSSocket.<anonymous> (C:\Users\49373638\tp8dai\node_modules\pg-protocol\dist\index.js:11:42)
+    at TLSSocket.emit (node:events:508:28)
+    at addChunk (node:internal/streams/readable:559:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+    at Readable.push (node:internal/streams/readable:390:5)
+    at TLSWrap.onStreamRead (node:internal/stream_base_commons:189:23)
+
+
+2026-05-29T11:12:17.006Z : Tenant or user not found
+
+Stack Trace:
+error: Tenant or user not found
+    at parseErrorMessage (C:\Users\49373638\tp8dai\node_modules\pg-protocol\dist\parser.js:305:11)
+    at Parser.handlePacket (C:\Users\49373638\tp8dai\node_modules\pg-protocol\dist\parser.js:143:27)
+    at Parser.parse (C:\Users\49373638\tp8dai\node_modules\pg-protocol\dist\parser.js:37:38)
+    at TLSSocket.<anonymous> (C:\Users\49373638\tp8dai\node_modules\pg-protocol\dist\index.js:11:42)
+    at TLSSocket.emit (node:events:508:28)
+    at addChunk (node:internal/streams/readable:559:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+    at Readable.push (node:internal/streams/readable:390:5)
+    at TLSWrap.onStreamRead (node:internal/stream_base_commons:189:23)
+
+
+2026-05-29T11:23:36.384Z : 
+
+Stack Trace:
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1134:18)
+    at afterConnectMultiple (node:net:1715:7)
+
+
+2026-05-29T11:26:01.928Z : getaddrinfo ENOTFOUND db.rrqkkvjuplwcbvntaath.supabase.co
+
+Stack Trace:
+Error: getaddrinfo ENOTFOUND db.rrqkkvjuplwcbvntaath.supabase.co
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:122:26)
+    at cachedError (file:///C:/Users/49373638/tp8dai/node_modules/postgres/src/query.js:170:23)
+    at new Query (file:///C:/Users/49373638/tp8dai/node_modules/postgres/src/query.js:36:24)
+    at sql (file:///C:/Users/49373638/tp8dai/node_modules/postgres/src/index.js:112:11)
+    at ProvinceRepository.getAllAsync (file:///C:/Users/49373638/tp8dai/src/repositories/province-repository.js:18:37)
+
+
+2026-05-29T11:28:37.375Z : getaddrinfo ENOTFOUND db.rrqkkvjuplwcbvntaath.supabase.co
+
+Stack Trace:
+Error: getaddrinfo ENOTFOUND db.rrqkkvjuplwcbvntaath.supabase.co
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:122:26)
+    at cachedError (file:///C:/Users/49373638/tp8dai/node_modules/postgres/src/query.js:170:23)
+    at new Query (file:///C:/Users/49373638/tp8dai/node_modules/postgres/src/query.js:36:24)
+    at sql (file:///C:/Users/49373638/tp8dai/node_modules/postgres/src/index.js:112:11)
+    at ProvinceRepository.getAllAsync (file:///C:/Users/49373638/tp8dai/src/repositories/province-repository.js:18:37)
+
+
+2026-05-29T11:29:47.291Z : getaddrinfo ENOTFOUND db.rrqkkvjuplwcbvntaath.supabase.co
+
+Stack Trace:
+Error: getaddrinfo ENOTFOUND db.rrqkkvjuplwcbvntaath.supabase.co
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:122:26)
+    at cachedError (file:///C:/Users/49373638/tp8dai/node_modules/postgres/src/query.js:170:23)
+    at new Query (file:///C:/Users/49373638/tp8dai/node_modules/postgres/src/query.js:36:24)
+    at sql (file:///C:/Users/49373638/tp8dai/node_modules/postgres/src/index.js:112:11)
+    at ProvinceRepository.getAllAsync (file:///C:/Users/49373638/tp8dai/src/repositories/province-repository.js:15:33)
+
+
+2026-05-29T11:38:54.911Z : (ENOTFOUND) tenant/user postgres.rrqkkvjuplwcbvntaath not found
+
+Stack Trace:
+PostgresError: (ENOTFOUND) tenant/user postgres.rrqkkvjuplwcbvntaath not found
+    at ErrorResponse (file:///C:/Users/49373638/tp8dai/node_modules/postgres/src/connection.js:817:22)
+    at handle (file:///C:/Users/49373638/tp8dai/node_modules/postgres/src/connection.js:489:6)
+    at TLSSocket.data (file:///C:/Users/49373638/tp8dai/node_modules/postgres/src/connection.js:324:9)
+    at TLSSocket.emit (node:events:508:28)
+    at addChunk (node:internal/streams/readable:559:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+    at Readable.push (node:internal/streams/readable:390:5)
+    at TLSWrap.onStreamRead (node:internal/stream_base_commons:189:23)
+    at cachedError (file:///C:/Users/49373638/tp8dai/node_modules/postgres/src/query.js:170:23)
+    at new Query (file:///C:/Users/49373638/tp8dai/node_modules/postgres/src/query.js:36:24)
+    at sql (file:///C:/Users/49373638/tp8dai/node_modules/postgres/src/index.js:112:11)
+    at ProvinceRepository.getAllAsync (file:///C:/Users/49373638/tp8dai/src/repositories/province-repository.js:15:37)
+
+
+2026-05-29T11:39:09.355Z : (ENOTFOUND) tenant/user postgres.rrqkkvjuplwcbvntaath not found
+
+Stack Trace:
+PostgresError: (ENOTFOUND) tenant/user postgres.rrqkkvjuplwcbvntaath not found
+    at ErrorResponse (file:///C:/Users/49373638/tp8dai/node_modules/postgres/src/connection.js:817:22)
+    at handle (file:///C:/Users/49373638/tp8dai/node_modules/postgres/src/connection.js:489:6)
+    at TLSSocket.data (file:///C:/Users/49373638/tp8dai/node_modules/postgres/src/connection.js:324:9)
+    at TLSSocket.emit (node:events:508:28)
+    at addChunk (node:internal/streams/readable:559:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+    at Readable.push (node:internal/streams/readable:390:5)
+    at TLSWrap.onStreamRead (node:internal/stream_base_commons:189:23)
+    at cachedError (file:///C:/Users/49373638/tp8dai/node_modules/postgres/src/query.js:170:23)
+    at new Query (file:///C:/Users/49373638/tp8dai/node_modules/postgres/src/query.js:36:24)
+    at sql (file:///C:/Users/49373638/tp8dai/node_modules/postgres/src/index.js:112:11)
+    at ProvinceRepository.getAllAsync (file:///C:/Users/49373638/tp8dai/src/repositories/province-repository.js:15:37)
+

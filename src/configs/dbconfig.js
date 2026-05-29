@@ -1,14 +1,11 @@
+// Importa postgres
+import postgres from "postgres";
+
+// Importa variables .env
 import 'dotenv/config';
 
-const DBConfig = {
-    host: process.env.DB_HOST,
-    database: process.env.DB_NAME,
-    user: process.env.DB_USER,
-    password: process.env.DB_PASSWORD,
-    port: process.env.DB_PORT,
-    ssl: {
-        rejectUnauthorized: false
-    }
-};
+// Crea la conexión usando DATABASE_URL
+const sql = postgres(process.env.DATABASE_URL, { ssl: 'require' });
 
-export default DBConfig;
+// Exporta la conexión
+export default sql;
