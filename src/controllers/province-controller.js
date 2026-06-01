@@ -1,17 +1,13 @@
-// Importa Router de express
+//importa router de express y service
 import { Router } from "express";
-
-// Importa service
 import ProvinceService from "../services/province-service.js";
-
-// Crea router
+//crea ruter
 const router = Router();
-
-// Instancia service
+// crea instancia service
 const service = new ProvinceService();
 
 
-// GET ALL
+//get all, agarra todo
 router.get("", async (req, res) => {
 
     const respuesta =
@@ -21,7 +17,7 @@ router.get("", async (req, res) => {
 });
 
 
-// GET BY ID
+// get by id busca por id y si no hay ,mamda error
 router.get("/:id", async (req, res) => {
 
     const id = req.params.id;
@@ -42,7 +38,7 @@ router.get("/:id", async (req, res) => {
 });
 
 
-// POST
+//post afarra los datos y crea provincia
 router.post("", async (req, res) => {
 
     const entity = req.body;
@@ -63,12 +59,12 @@ router.post("", async (req, res) => {
 });
 
 
-// PUT
+//put agarra los datos, verifica si existe y en caso de que si actualiza la provincia
 router.put("", async (req, res) => {
 
     const entity = req.body;
 
-    // Verifica si existe
+    //verifica si existe el id
     const existe =
         await service.getByIdAsync(entity.id);
 
@@ -96,7 +92,7 @@ router.put("", async (req, res) => {
 });
 
 
-// DELETE
+//delete, busca por id y en caso duq exista la elimina
 router.delete("/:id", async (req, res) => {
 
     const id = req.params.id;
@@ -117,5 +113,5 @@ router.delete("/:id", async (req, res) => {
     }
 });
 
-// Exporta router
+//exporta router
 export default router;

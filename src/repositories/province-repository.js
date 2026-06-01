@@ -1,22 +1,15 @@
-// Importa conexión a la base
+//importa conexión a la bd
 import sql from "../configs/dbconfig.js";
-
-// Importa helper de logs
+//importa logs
 import LogHelper from "../helpers/log-helper.js";
-
-// Clase repository
 export default class ProvinceRepository {
-
-    // Obtiene todas las provincias
+    //obtiene todas las provincias (getall)
 getAllAsync = async () => {
-
     try {
-
         const provincias = await sql`
             SELECT * FROM provinces
             ORDER BY id
         `;
-
         return provincias;
     }
     catch (error) {
@@ -29,20 +22,18 @@ getAllAsync = async () => {
     }
 }
 
-    // Obtiene provincia por id
+    //obtiene la provincia por su id
     getByIdAsync = async (id) => {
 
         let returnEntity = null;
 
         try {
-
-            // Consulta SQL
+            //consulta el sql
             const result = await sql`
                 SELECT * FROM provinces
                 WHERE id = ${id}
             `;
-
-            // Verifica si encontró algo
+            //verifica si encontró algo
             if (result.length > 0) {
 
                 returnEntity = result[0];
@@ -56,14 +47,11 @@ getAllAsync = async () => {
         return returnEntity;
     }
 
-    // Inserta provincia
+    //inserta provincia agarra los datos y devuelve las filas
     createAsync = async (entity) => {
-
         let filasAfectadas = 0;
-
         try {
-
-            // Consulta SQL
+            //consulta el sql
             const result = await sql`
                 INSERT INTO provinces
                 (
@@ -93,14 +81,12 @@ getAllAsync = async () => {
         return filasAfectadas;
     }
 
-    // Modifica provincia
+    //modifica 1 provincia
     updateAsync = async (entity) => {
-
         let filasAfectadas = 0;
-
         try {
 
-            // Consulta SQL
+            // consulta ssql
             const result = await sql`
                 UPDATE provinces
                 SET
@@ -122,14 +108,14 @@ getAllAsync = async () => {
         return filasAfectadas;
     }
 
-    // Elimina provincia
+    //elimina provincia
     deleteByIdAsync = async (id) => {
 
         let filasAfectadas = 0;
 
         try {
 
-            // Consulta SQL
+            //consulta SQL
             const result = await sql`
                 DELETE FROM provinces
                 WHERE id = ${id}

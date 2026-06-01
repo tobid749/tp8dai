@@ -1,51 +1,40 @@
-// Importa repository
+//importa el provincerepository
 import ProvinceRepository from "../repositories/province-repository.js";
-
-// Clase service
 export default class ProvinceService {
-
-    // Instancia repository
+    //instancia repository
     repository = new ProvinceRepository();
 
-    // Obtiene todas
+    //obtiene todas las provinciasa
     getAllAsync = async () => {
-
         return await this.repository.getAllAsync();
     }
 
-    // Obtiene por id
+    //obtiene por id
     getByIdAsync = async (id) => {
-
         return await this.repository.getByIdAsync(id);
     }
 
-    // Inserta provincia
+    //crea provincia
     createAsync = async (entity) => {
 
-        // Validación
+        //valida si tiene menios de 3 letras y sino crea
         if (!entity.name || entity.name.trim().length < 3) {
-
             return "El nombre debe tener mínimo 3 letras";
         }
-
         return await this.repository.createAsync(entity);
     }
 
-    // Modifica provincia
+    //modifica provincia
     updateAsync = async (entity) => {
-
-        // Validación
+        //valida que tenga mas de 3 letras
         if (!entity.name || entity.name.trim().length < 3) {
-
             return "El nombre debe tener mínimo 3 letras";
         }
-
         return await this.repository.updateAsync(entity);
     }
 
-    // Elimina provincia
+    //elimina provincia
     deleteByIdAsync = async (id) => {
-
         return await this.repository.deleteByIdAsync(id);
     }
 }

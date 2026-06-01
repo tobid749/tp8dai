@@ -1,33 +1,24 @@
-// Importa configuración .env
+//importa la config del env
 import 'dotenv/config';
-
-// Importa filesystem
+//importa el fs
 import fs from 'fs';
-
-// Clase helper para guardar errores
+//clase loghelper que guarda los errores
 class LogHelper {
 
     constructor() {
-
-        // Ruta del archivo
         this.filePath = process.env.LOG_FILE_PATH;
-
-        // Nombre del archivo
+        //nombrearchivo
         this.fileName = process.env.LOG_FILE_NAME;
-
-        // Habilita logs en archivo
+        //habilita logs
         this.logToFileEnabled =
             process.env.LOG_TO_FILE_ENABLED === 'true';
-
-        // Habilita logs en consola
+        //habilita logs enla consola
         this.logToConsoleEnabled =
             process.env.LOG_TO_CONSOLE_ENABLED === 'true';
     }
-
-    // Método para guardar errores
+    // meetodo q guarda errores
     logError = (errorObject) => {
-
-        // Mensaje del error
+        //mensaje error
         const mensaje = `
 ${new Date().toISOString()} : ${errorObject.message}
 
@@ -35,14 +26,13 @@ Stack Trace:
 ${errorObject.stack}
 
 `;
-
-        // Mostrar por consola
+        //mostrar por consola
         if (this.logToConsoleEnabled) {
 
             console.log(mensaje);
         }
 
-        // Guardar en archivo
+        //guardar en archivo
         if (this.logToFileEnabled) {
 
             fs.appendFileSync(
@@ -53,5 +43,5 @@ ${errorObject.stack}
     }
 }
 
-// Exporta instancia
+//esxportar loghelpe
 export default new LogHelper();

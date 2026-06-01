@@ -1,15 +1,14 @@
-// Clase Province
+//clase Province
 export default class Province {
 
-    // Propiedades
+    //propiedades
     id;
     name;
     full_name;
     latitude;
     longitude;
     display_order;
-
-    // Constructor
+    //construc
     constructor(
         id,
         name,
